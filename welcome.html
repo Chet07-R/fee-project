@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Weather App</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Weather App</h1>
+        <p>Loading...</p>
+    </div>
+    <script>
+        // Redirect after 5 seconds
+        setTimeout(() => {
+            document.body.classList.add('slide-out'); // Trigger slide-out animation
+            setTimeout(() => {
+                window.location.href = 'head.html'; // Redirect to your main weather app
+            }, 500); // Match this duration with the slide-out animation duration
+        }, 5000); // Wait 5 seconds before starting the slide-out
+    </script>
+</body>
+</html>
+
